@@ -16,7 +16,7 @@ export default class NavHeader extends React.Component {
                         {
                             this.props.data.map(nav => {
                                 return (
-                                    <Nav key={nav.id} caption={nav.caption} />
+                                    <Nav key={nav.id} id={nav.id} caption={nav.caption} select={this.props.select} />
                                 );
                             })
                         }

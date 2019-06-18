@@ -8,7 +8,7 @@ export default class Nav extends React.Component {
 
     render() {
         return (
-            <span className="nav">{this.props.caption}</span>
+            <span className="nav" id={this.props.id} onClick={this.props.select}>{this.props.caption}</span>
         );
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import dummyData from './data';
 import NavHeader from './components/NavHeader/NavHeader';
+import isActiveTab from './components/HOCs/isActiveTab';
 import './App.css';
 
 const data = dummyData;
@@ -16,10 +17,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <NavHeader data={this.state.data} />
+        <NavHeader data={this.state.data} select={this.props.select} />
       </div>
     );
   }
 }
 
-export default App;
+export default isActiveTab(App);
