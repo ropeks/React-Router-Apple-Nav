@@ -22,7 +22,11 @@ class App extends React.Component {
         <NavHeader data={this.state.data} select={this.props.select} />
         {
           this.props.active &&
-          <Route exact path="/" component={SubNav} />
+          <Route 
+            exact 
+            path="/" 
+            render={(props) => <SubNav {...props} id={this.props.active} />} 
+          />
         }
         
       </div>
