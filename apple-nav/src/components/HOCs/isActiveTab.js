@@ -10,13 +10,15 @@ function isActveTab(Component) {
         }
 
         selectTab = (e) => {
-            this.setState({ isActive: e.target.id })
+            !this.state.isActive
+            ? this.setState({ isActive: e.target.id })
+            : this.setState({ isActive: null });
         }
 
         render() {
             return(
                 <>
-                    <Component select={this.selectTab} />
+                    <Component active={this.state.isActive} select={this.selectTab} />
                 </>
             )
         }

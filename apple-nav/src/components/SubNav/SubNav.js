@@ -8,7 +8,7 @@ export default class SubNav extends React.Component {
     render() {
         return (
             <div>
-                
+                I'm a SubNav.
             </div>
         );
     }
