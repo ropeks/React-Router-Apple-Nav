@@ -6,7 +6,6 @@
   display: block;
   margin: 0;
   width: 100%;
-  min-width: 1024px;
   height: 48px;
   max-height: 44px;
   background: rgba(45,45,45,0.98);
@@ -40,5 +39,5 @@
 
 .nav:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.65;
 }
